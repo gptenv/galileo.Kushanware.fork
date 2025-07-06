@@ -26,6 +26,7 @@
 
 #include "galileo_heuristic_compiler.h"
 #include "../core/galileo_core.h"
+#include "../symbolic/galileo_symbolic.h"
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
@@ -33,6 +34,7 @@
 #include <time.h>
 #include <sqlite3.h>
 #include <unistd.h>
+#include <inttypes.h>
 
 /* Thread support - portable across UNIX systems */
 #if defined(_POSIX_THREADS) || defined(__APPLE__) || defined(__linux__)
@@ -119,8 +121,10 @@ typedef struct {
 } GeneticAlgorithm;
 
 /* Calculate fitness for a chromosome (lower energy = higher fitness) */
-static float calculate_fitness(GalileoModel* model, FactChromosome* chromo, 
+static float calculate_fitness(GalileoModel* model, FactChromosome* chromo,
                               char tokens[][MAX_TOKEN_LEN], int num_tokens) {
+    (void)model;
+    (void)tokens;
     if (chromo->subject_idx == chromo->relation_idx || 
         chromo->subject_idx == chromo->object_idx || 
         chromo->relation_idx == chromo->object_idx ||
@@ -134,7 +138,7 @@ static float calculate_fitness(GalileoModel* model, FactChromosome* chromo,
     
     /* Energy term 1: Semantic coherence (subject and object should be related) */
     /* For now, use position preference and length heuristics */
-    float position_energy = fabsf(chromo->subject_idx - chromo->object_idx) * 0.1f;
+    float position_energy = (float)abs(chromo->subject_idx - chromo->object_idx) * 0.1f;
     
     /* Energy term 2: Relation quality (middle tokens often better relations) */
     float relation_centrality = fabsf(chromo->relation_idx - (num_tokens / 2.0f));
@@ -323,6 +327,7 @@ static int init_sqlite_db(sqlite3* db) {
 
 /* Generate pattern key for caching */
 static void generate_pattern_key(char tokens[][MAX_TOKEN_LEN], int num_tokens, char* key, size_t key_size) {
+    (void)tokens;
     snprintf(key, key_size, "TOKENS_%d", num_tokens);
     
     /* For now, simple key based on token count */
@@ -414,7 +419,7 @@ static void update_rule_usage(HeuristicCompiler* compiler, const char* pattern_h
  */
 
 /* Calculate relevancy score for a rule */
-static float calculate_relevancy_score(const HeuristicRule* rule) {
+float calculate_relevancy_score(const HeuristicRule* rule) {
     time_t now = time(NULL);
     time_t age_days = (now - rule->created_time) / (24 * 3600);
     
@@ -502,7 +507,7 @@ static void annual_relevancy_audit(HeuristicCompiler* compiler) {
             printf("   Total rules: %d\n", total_rules);
             printf("   Average confidence: %.3f\n", avg_confidence);
             printf("   Average hit count: %.1f\n", avg_hits);
-            printf("   Rules cleaned in 19+ years: %llu\n", compiler->stats.rules_cleaned_19_year);
+            printf("   Rules cleaned in 19+ years: %" PRIu64 "\n", compiler->stats.rules_cleaned_19_year);
         }
         
         sqlite3_finalize(stmt);
@@ -551,9 +556,9 @@ void destroy_heuristic_compiler(HeuristicCompiler* compiler) {
     if (!compiler) return;
     
     printf("📊 Heuristic compiler final statistics:\n");
-    printf("   Cache hits: %llu\n", compiler->stats.total_cache_hits);
-    printf("   GA discoveries: %llu\n", compiler->stats.total_discoveries);
-    printf("   Rules cleaned (19yr): %llu\n", compiler->stats.rules_cleaned_19_year);
+    printf("   Cache hits: %" PRIu64 "\n", compiler->stats.total_cache_hits);
+    printf("   GA discoveries: %" PRIu64 "\n", compiler->stats.total_discoveries);
+    printf("   Rules cleaned (19yr): %" PRIu64 "\n", compiler->stats.rules_cleaned_19_year);
     
     if (compiler->db) {
         sqlite3_close(compiler->db);
@@ -619,7 +624,7 @@ int extract_facts_with_heuristic_compiler(GalileoModel* model, char tokens[][MAX
             
             /* Compile and cache the new rule */
             HeuristicRule new_rule = {0};
-            strncpy(new_rule.pattern_hash, pattern_key, sizeof(new_rule.pattern_hash) - 1);
+            snprintf(new_rule.pattern_hash, sizeof(new_rule.pattern_hash), "%.63s", pattern_key);
             snprintf(new_rule.token_pattern, sizeof(new_rule.token_pattern), 
                     "TOKENS_%d", num_tokens);
             new_rule.subject_role = discovery.subject_role;
