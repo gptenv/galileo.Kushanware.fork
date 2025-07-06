@@ -25,13 +25,16 @@
 
 #include "galileo_heuristic_compiler.h"
 #include "../core/galileo_core.h"
+#include "../symbolic/galileo_symbolic.h"
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <time.h>
 #include <sqlite3.h>
+#ifndef _WIN32
 #include <unistd.h>
+#endif
 #include <inttypes.h>
 
 /* Thread support - portable across UNIX systems */
@@ -123,6 +126,8 @@ typedef struct {
 static float calculate_fitness(GalileoModel* model, FactChromosome* chromo,
                               char tokens[][MAX_TOKEN_LEN], int num_tokens) {
     (void)model;  /* Suppress unused parameter warning */
+    (void)tokens; /* Suppress unused parameter warning if not used */
+    (void)num_tokens; /* Suppress unused parameter warning if not used */
     
     if (chromo->subject_idx == chromo->relation_idx || 
         chromo->subject_idx == chromo->object_idx || 
@@ -139,10 +144,10 @@ static float calculate_fitness(GalileoModel* model, FactChromosome* chromo,
     float energy = 0.0f;
     
     /* Energy term 1: Semantic coherence (subject and object should be related) */
-    float position_energy = (float)abs(chromo->subject_idx - chromo->object_idx) * 0.1f;
+    float position_energy = fabsf((float)(chromo->subject_idx - chromo->object_idx)) * 0.1f;
     
     /* Energy term 2: Relation quality (middle tokens often better relations) */
-    float relation_centrality = fabsf(chromo->relation_idx - (num_tokens / 2.0f));
+    float relation_centrality = fabsf((float)(chromo->relation_idx) - ((float)num_tokens / 2.0f));
     
     /* Energy term 3: Common linguistic patterns (subject-relation-object order) */
     float order_energy = 0.0f;
@@ -519,7 +524,8 @@ HeuristicCompiler* create_heuristic_compiler(const char* db_path) {
 void destroy_heuristic_compiler(HeuristicCompiler* compiler) {
     if (!compiler) return;
     
-    printf("📊 Heuristic compiler final statistics:\n");
+    printf("\U0001F4CA Heuristic compiler final statistics:\n");
+    printf("   Rules cleaned in 19+ years: %" PRIu64 "\n", compiler->stats.rules_cleaned_19_year);
     printf("   Cache hits: %" PRIu64 "\n", compiler->stats.total_cache_hits);
     printf("   GA discoveries: %" PRIu64 "\n", compiler->stats.total_discoveries);
     printf("   Rules cleaned (19yr): %" PRIu64 "\n", compiler->stats.rules_cleaned_19_year);
@@ -571,6 +577,9 @@ int extract_facts_with_heuristic_compiler(GalileoModel* model, char tokens[][MAX
                 strncpy(model->facts[model->num_facts].relation, tokens[cached_rule.relation_role], MAX_TOKEN_LEN-1);
                 strncpy(model->facts[model->num_facts].object, tokens[cached_rule.object_role], MAX_TOKEN_LEN-1);
                 model->facts[model->num_facts].confidence = cached_rule.confidence;
+                model->facts[model->num_facts].subject[MAX_TOKEN_LEN-1] = '\0';
+                model->facts[model->num_facts].relation[MAX_TOKEN_LEN-1] = '\0';
+                model->facts[model->num_facts].object[MAX_TOKEN_LEN-1] = '\0';
                 model->num_facts++;
             }
             
@@ -599,6 +608,9 @@ int extract_facts_with_heuristic_compiler(GalileoModel* model, char tokens[][MAX
                 strncpy(model->facts[model->num_facts].relation, tokens[ga_result.relation_role], MAX_TOKEN_LEN-1);
                 strncpy(model->facts[model->num_facts].object, tokens[ga_result.object_role], MAX_TOKEN_LEN-1);
                 model->facts[model->num_facts].confidence = ga_result.confidence;
+                model->facts[model->num_facts].subject[MAX_TOKEN_LEN-1] = '\0';
+                model->facts[model->num_facts].relation[MAX_TOKEN_LEN-1] = '\0';
+                model->facts[model->num_facts].object[MAX_TOKEN_LEN-1] = '\0';
                 model->num_facts++;
             }
             
