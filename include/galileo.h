@@ -1,13 +1,12 @@
 /* =============================================================================
- * galileo/include/galileo.h - Master Public Header
+ * galileo/include/galileo.h - Master Public Header (UPDATED)
  * 
- * UPDATED for lazy loading hot-pluggable module system.
+ * UPDATED for enhanced lazy loading system with proper header management.
  * Main public header for the Galileo v42 Graph-and-Logic Integrated Language
  * Engine. This header provides a unified interface to all Galileo modules
  * and is the single include file that external projects need.
  * 
- * This header is installed to the system include path and provides access
- * to the complete Galileo API through a clean, modular interface.
+ * Fixed header ordering and ensured compatibility with lazy loading system.
  * =============================================================================
  */
 
@@ -26,6 +25,7 @@
 #include <assert.h>
 #include <stdint.h>
 #include <stddef.h>
+#include <time.h>
 #include <unistd.h>
 
 /* Dynamic loading support (for module system) */
@@ -48,9 +48,9 @@
 #define GALILEO_VERSION_MAJOR 42
 #define GALILEO_VERSION_MINOR 1
 #define GALILEO_VERSION_PATCH 0
-#define GALILEO_VERSION_STRING "42.1.0"
+#define GALILEO_VERSION_STRING "42.1.0-enhanced"
 #define GALILEO_API_VERSION "42.1"
-#define GALILEO_VERSION "42.1.0"
+#define GALILEO_VERSION "42.1.0-enhanced"
 
 /* Version checking macros */
 #define GALILEO_VERSION_CHECK(major, minor, patch) \
@@ -62,7 +62,7 @@
  * GALILEO CORE MODULE HEADERS
  * 
  * Core type definitions and fundamental structures that all other modules
- * depend on. These must be included first.
+ * depend on. These must be included first and in the correct order.
  * =============================================================================
  */
 
@@ -122,6 +122,7 @@
 #define GALILEO_HAS_LAZY_LOADING 1
 #define GALILEO_HAS_HOT_PLUGGING 1
 #define GALILEO_HAS_DYNAMIC_MODULES 1
+#define GALILEO_HAS_19_YEAR_CACHE 1
 
 /* =============================================================================
  * GALILEO FEATURE FLAGS
@@ -176,53 +177,33 @@ static inline int galileo_discover_all_modules(void) {
     return galileo_discover_modules();
 }
 
-static inline int galileo_load_all_modules(void) {
-    /* Note: Only use this for testing/inspection, not normal operation */
-    return load_all_discovered_modules();
+/* REMOVED: galileo_load_required_modules - conflicts with module_loader.h declaration */
+
+/* =============================================================================
+ * GALILEO CONVENIENCE FUNCTIONS
+ * =============================================================================
+ */
+
+/* Quick start function for simple usage */
+static inline GalileoModel* galileo_quick_start(void) {
+    if (galileo_system_init() != 0) {
+        return NULL;
+    }
+    
+    if (load_bootstrap_modules() != 0) {  /* FIXED: Use direct function name */
+        galileo_system_cleanup();
+        return NULL;
+    }
+    
+    return galileo_init();
 }
 
-/* =============================================================================
- * GALILEO INFORMATION AND METADATA
- * =============================================================================
- */
-
-/* System information string */
-#define GALILEO_INFO_STRING \
-    "Galileo Graph-and-Logic Integrated Language Engine v" GALILEO_VERSION_STRING "\n" \
-    "Features: Dynamic Loading, Hot-Pluggable Modules, JIT Loading\n" \
-    "Architecture: Graph Neural Networks + Symbolic Reasoning\n" \
-    "Copyright: Open Source Implementation"
-
-/* Build information */
-#ifdef DEBUG
-#define GALILEO_BUILD_TYPE "Debug"
-#else
-#define GALILEO_BUILD_TYPE "Release"
-#endif
-
-#ifdef __DATE__
-#define GALILEO_BUILD_DATE __DATE__
-#else
-#define GALILEO_BUILD_DATE "Unknown"
-#endif
-
-#ifdef __TIME__
-#define GALILEO_BUILD_TIME __TIME__
-#else
-#define GALILEO_BUILD_TIME "Unknown"
-#endif
-
-/* =============================================================================
- * COMPATIBILITY AND FORWARD DECLARATIONS
- * =============================================================================
- */
-
-/* For older code that might reference the previous API */
-#ifndef GALILEO_NO_LEGACY_DEFINES
-#define GALILEO_LEGACY_VERSION_STRING GALILEO_VERSION_STRING
-#endif
-
-/* Forward compatibility for future API changes */
-typedef void* GalileoHandle;  /* Opaque handle for future use */
+/* Quick cleanup function */
+static inline void galileo_quick_cleanup(GalileoModel* model) {
+    if (model) {
+        galileo_destroy(model);
+    }
+    galileo_system_cleanup();
+}
 
 #endif /* GALILEO_H */

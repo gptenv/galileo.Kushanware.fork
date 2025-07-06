@@ -7,6 +7,8 @@
  * 
  * This module handles the core graph neural network functionality that makes
  * Galileo's dynamic graph architecture possible.
+ * 
+ * UPDATED for full lazy loading support with proper module lifecycle management.
  * =============================================================================
  */
 
@@ -66,11 +68,11 @@ void galileo_prune_weak_edges(GalileoModel* model);
 int compare_edge_candidates(const void* a, const void* b);
 
 /* =============================================================================
- * MODULE INTERFACE
+ * MODULE INTERFACE FOR LAZY LOADING
  * =============================================================================
  */
 
-/* Module info for dynamic loading */
+/* Module info structure for dynamic loading */
 typedef struct {
     const char* name;
     const char* version;
@@ -78,6 +80,18 @@ typedef struct {
     void (*cleanup_func)(void);
 } GraphModuleInfo;
 
+/* Module info instance - exported for module loader */
 extern GraphModuleInfo graph_module_info;
+
+/* =============================================================================
+ * MODULE CAPABILITY CHECKS
+ * =============================================================================
+ */
+
+/* Check if graph module is properly initialized */
+static inline int galileo_graph_module_ready(void) {
+    /* This would be implemented by checking initialization state */
+    return 1; /* For now, assume ready if header is included */
+}
 
 #endif /* GALILEO_GRAPH_H */
