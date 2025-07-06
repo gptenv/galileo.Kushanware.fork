@@ -1,6 +1,7 @@
 /* =============================================================================
  * galileo/src/core/galileo_core.h - Core Module Public API
  * 
+ * UPDATED for lazy loading hot-pluggable module system.
  * Public header for the core Galileo module containing fundamental types,
  * structures, and function declarations for model lifecycle management.
  * 
@@ -34,7 +35,7 @@ int galileo_add_token(GalileoModel* model, const char* token_text);
 void galileo_compute_graph_stats(GalileoModel* model);
 void galileo_update_importance_scores(GalileoModel* model);
 
-/* Processing coordination */
+/* Processing coordination - UPDATED for lazy loading */
 void galileo_process_sequence(GalileoModel* model, char tokens[][MAX_TOKEN_LEN], int num_tokens);
 
 /* Model validation and information */
@@ -44,7 +45,117 @@ int galileo_get_model_info(GalileoModel* model, char* info_buffer, size_t buffer
 /* Testing and safety */
 void test_multi_model_safety(void);
 
-/* Module info for dynamic loading */
+/* =============================================================================
+ * LAZY MODULE LOADING FUNCTIONS - NEW!
+ * =============================================================================
+ */
+
+/* External declaration for lazy loading function from main module */
+extern int ensure_module_loaded(const char* module_name);
+
+/* Enhanced token embedding with positional encoding */
+float* get_enhanced_token_embedding(GalileoModel* model, const char* token_text, 
+                                   int context_position, float* output_buffer);
+
+/* Enhanced hash function for token processing */
+uint32_t enhanced_hash(const char* str);
+
+/* =============================================================================
+ * DYNAMIC MODULE FUNCTION CALLING - NEW!
+ * =============================================================================
+ */
+
+/* Safe wrappers that handle lazy loading automatically */
+int call_graph_function_lazy(const char* function_name, GalileoModel* model);
+int call_symbolic_function_lazy(const char* function_name, GalileoModel* model);
+int call_memory_function_lazy(const char* function_name, GalileoModel* model);
+int call_heuristic_function_lazy(const char* function_name, GalileoModel* model, 
+                                char tokens[][MAX_TOKEN_LEN], int num_tokens);
+int call_utils_function_lazy(const char* function_name, GalileoModel* model);
+
+/* Lower-level module function calling */
+void* get_module_function(const char* module_name, const char* function_name);
+
+/* =============================================================================
+ * MODULE INTEGRATION STATUS CHECKING
+ * =============================================================================
+ */
+
+/* Check if specific modules are available for use */
+int galileo_has_graph_module(void);
+int galileo_has_symbolic_module(void);
+int galileo_has_memory_module(void);
+int galileo_has_heuristic_module(void);
+int galileo_has_utils_module(void);
+
+/* =============================================================================
+ * ENHANCED PROCESSING COORDINATION
+ * =============================================================================
+ */
+
+/* Processing phases with automatic module loading */
+typedef enum {
+    GALILEO_PHASE_TOKENIZATION,
+    GALILEO_PHASE_GRAPH_CONSTRUCTION,
+    GALILEO_PHASE_MESSAGE_PASSING,
+    GALILEO_PHASE_SYMBOLIC_REASONING,
+    GALILEO_PHASE_HEURISTIC_EXTRACTION,
+    GALILEO_PHASE_MEMORY_COMPRESSION,
+    GALILEO_PHASE_STATISTICS
+} GalileoProcessingPhase;
+
+/* Execute a specific processing phase with lazy loading */
+int galileo_execute_phase(GalileoModel* model, GalileoProcessingPhase phase, 
+                         char tokens[][MAX_TOKEN_LEN], int num_tokens);
+
+/* =============================================================================
+ * UTILITY FUNCTIONS FOR MODULE SYSTEM
+ * =============================================================================
+ */
+
+/* Vector operations (used by multiple modules) */
+float vector_dot_product(const float* a, const float* b, int dim);
+float vector_magnitude(const float* vec, int dim);
+float cosine_similarity(const float* a, const float* b, int dim);
+void vector_normalize(float* vec, int dim);
+void vector_add_scaled(float* dest, const float* src, float scale, int dim);
+void vector_copy(float* dest, const float* src, int dim);
+void vector_zero(float* vec, int dim);
+
+/* String utilities */
+void safe_strcpy(char* dest, const char* src, size_t dest_size);
+
+/* Random number utilities */
+float random_float(void);
+float random_float_range(void);
+
+/* =============================================================================
+ * PERFORMANCE AND DEBUGGING
+ * =============================================================================
+ */
+
+/* Performance monitoring for module loading */
+typedef struct {
+    int module_load_count;
+    int module_function_calls;
+    double total_module_load_time_ms;
+    double total_function_call_time_ms;
+    char last_loaded_module[64];
+    char most_used_module[64];
+} ModulePerformanceStats;
+
+/* Get performance statistics */
+ModulePerformanceStats galileo_get_module_performance_stats(void);
+
+/* Reset performance counters */
+void galileo_reset_module_performance_stats(void);
+
+/* =============================================================================
+ * MODULE INFO FOR DYNAMIC LOADING
+ * =============================================================================
+ */
+
+/* Module info structure for dynamic loading */
 typedef struct {
     const char* name;
     const char* version;
@@ -53,5 +164,39 @@ typedef struct {
 } CoreModuleInfo;
 
 extern CoreModuleInfo core_module_info;
+
+/* =============================================================================
+ * THREAD SAFETY AND CONCURRENCY
+ * =============================================================================
+ */
+
+/* Thread-safe model operations */
+int galileo_model_lock(GalileoModel* model);
+int galileo_model_unlock(GalileoModel* model);
+int galileo_model_try_lock(GalileoModel* model);
+
+/* Thread-local storage support */
+#if defined(__GNUC__) || defined(__clang__)
+    #define GALILEO_THREAD_LOCAL __thread
+#elif defined(_MSC_VER)
+    #define GALILEO_THREAD_LOCAL __declspec(thread)
+#elif defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L
+    #define GALILEO_THREAD_LOCAL _Thread_local
+#else
+    #define GALILEO_THREAD_LOCAL static
+    #warning "Thread-local storage not supported, using static (not thread-safe)"
+#endif
+
+/* =============================================================================
+ * BACKWARD COMPATIBILITY
+ * =============================================================================
+ */
+
+/* Legacy function names for compatibility */
+#ifndef GALILEO_NO_LEGACY_FUNCTIONS
+#define galileo_init_model() galileo_init()
+#define galileo_free_model(m) galileo_destroy(m)
+#define galileo_process_tokens(m, t, n) galileo_process_sequence(m, t, n)
+#endif
 
 #endif /* GALILEO_CORE_H */

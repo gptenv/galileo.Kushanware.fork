@@ -1,6 +1,7 @@
 /* =============================================================================
  * galileo/include/galileo.h - Master Public Header
  * 
+ * UPDATED for lazy loading hot-pluggable module system.
  * Main public header for the Galileo v42 Graph-and-Logic Integrated Language
  * Engine. This header provides a unified interface to all Galileo modules
  * and is the single include file that external projects need.
@@ -49,6 +50,7 @@
 #define GALILEO_VERSION_PATCH 0
 #define GALILEO_VERSION_STRING "42.1.0"
 #define GALILEO_API_VERSION "42.1"
+#define GALILEO_VERSION "42.1.0"
 
 /* Version checking macros */
 #define GALILEO_VERSION_CHECK(major, minor, patch) \
@@ -70,221 +72,157 @@
 /* Core model lifecycle and basic operations */
 #include "../src/core/galileo_core.h"
 
+/* Dynamic module loading system */
+#include "../src/core/galileo_module_loader.h"
+
 /* =============================================================================
  * GALILEO FUNCTIONAL MODULE HEADERS
  * 
  * The main functional modules that implement Galileo's capabilities.
- * Order matters due to dependencies.
+ * Order matters due to dependencies. 
+ * 
+ * NOTE: In the lazy loading system, these headers are included for 
+ * API definitions, but the actual modules are loaded on-demand at runtime.
  * =============================================================================
  */
 
 /* Graph neural network operations */
 #include "../src/graph/galileo_graph.h"
 
-/* Symbolic reasoning and logical inference */
+/* Symbolic reasoning and logic */
 #include "../src/symbolic/galileo_symbolic.h"
 
-/* Memory management and contextual addressing */
+/* Memory management and compression */
 #include "../src/memory/galileo_memory.h"
 
-/* Utilities, I/O, and helper functions */
+/* Utility functions and I/O */
 #include "../src/utils/galileo_utils.h"
 
+/* Heuristic compiler with GA-derived fact extraction */
+#include "../src/heuristic/galileo_heuristic_compiler.h"
+
 /* =============================================================================
- * GALILEO APPLICATION INTERFACE
- * 
- * CLI interface and main application entry points.
+ * GALILEO MAIN APPLICATION INTERFACE
  * =============================================================================
  */
 
-/* Command-line interface and main application */
+/* CLI interface and main application */
 #include "../src/main/galileo_main.h"
 
 /* =============================================================================
- * GALILEO API CONVENIENCE MACROS
+ * GALILEO PUBLIC API CONVENIENCE MACROS
  * =============================================================================
  */
 
-/* Quick model creation and destruction */
-#define GALILEO_CREATE_MODEL() galileo_init()
-#define GALILEO_DESTROY_MODEL(model) do { \
-    if (model) { \
-        galileo_destroy(model); \
-        model = NULL; \
-    } \
-} while(0)
+/* Lazy loading helper macros for external users */
+#define GALILEO_ENSURE_MODULE(name) ensure_module_loaded(name)
+#define GALILEO_IS_MODULE_LOADED(name) galileo_is_module_loaded(name)
 
-/* Safe model validation */
-#define GALILEO_VALIDATE_MODEL(model) \
-    ((model) && galileo_validate_model(model))
-
-/* Quick processing macros */
-#define GALILEO_PROCESS_TEXT(model, text) do { \
-    if (GALILEO_VALIDATE_MODEL(model) && (text)) { \
-        int token_count; \
-        char** tokens = tokenize_input(text, &token_count); \
-        if (tokens && token_count > 0) { \
-            char token_array[token_count][MAX_TOKEN_LEN]; \
-            for (int i = 0; i < token_count; i++) { \
-                strncpy(token_array[i], tokens[i], MAX_TOKEN_LEN - 1); \
-                token_array[i][MAX_TOKEN_LEN - 1] = '\0'; \
-            } \
-            galileo_process_sequence(model, token_array, token_count); \
-            free_tokens(tokens, token_count); \
-        } \
-    } \
-} while(0)
-
-/* Module availability checking */
-#define GALILEO_HAS_GRAPH_MODULE() is_module_loaded("graph")
-#define GALILEO_HAS_SYMBOLIC_MODULE() is_module_loaded("symbolic")
-#define GALILEO_HAS_MEMORY_MODULE() is_module_loaded("memory")
-#define GALILEO_HAS_UTILS_MODULE() is_module_loaded("utils")
+/* Version and feature checking */
+#define GALILEO_HAS_LAZY_LOADING 1
+#define GALILEO_HAS_HOT_PLUGGING 1
+#define GALILEO_HAS_DYNAMIC_MODULES 1
 
 /* =============================================================================
- * GALILEO CONFIGURATION AND BUILD INFO
+ * GALILEO FEATURE FLAGS
  * =============================================================================
  */
 
-/* Build configuration detection */
-#ifdef NDEBUG
-#define GALILEO_BUILD_TYPE "Release"
-#else
+/* Module capability flags */
+#define GALILEO_CAP_GRAPH_NEURAL_NETWORKS  (1 << 0)
+#define GALILEO_CAP_SYMBOLIC_REASONING     (1 << 1)
+#define GALILEO_CAP_MEMORY_COMPRESSION     (1 << 2)
+#define GALILEO_CAP_HEURISTIC_COMPILATION  (1 << 3)
+#define GALILEO_CAP_DYNAMIC_LOADING        (1 << 4)
+#define GALILEO_CAP_HOT_PLUGGING           (1 << 5)
+
+/* =============================================================================
+ * GALILEO ERROR HANDLING
+ * =============================================================================
+ */
+
+/* Error codes used throughout the system */
+typedef enum {
+    GALILEO_SUCCESS = 0,
+    GALILEO_ERROR_GENERAL = 1,
+    GALILEO_ERROR_ARGUMENTS = 2,
+    GALILEO_ERROR_MODULE_LOADING = 3,
+    GALILEO_ERROR_IO = 4,
+    GALILEO_ERROR_MEMORY = 5,
+    GALILEO_ERROR_SIGNAL = 130
+} GalileoErrorCode;
+
+/* =============================================================================
+ * GALILEO INITIALIZATION AND CLEANUP
+ * =============================================================================
+ */
+
+/* System-wide initialization and cleanup functions */
+static inline int galileo_system_init(void) {
+    return galileo_module_loader_init();
+}
+
+static inline void galileo_system_cleanup(void) {
+    galileo_module_loader_cleanup();
+}
+
+/* =============================================================================
+ * GALILEO MODULE DISCOVERY AND MANAGEMENT
+ * =============================================================================
+ */
+
+/* High-level module management functions for external users */
+static inline int galileo_discover_all_modules(void) {
+    return galileo_discover_modules();
+}
+
+static inline int galileo_load_all_modules(void) {
+    /* Note: Only use this for testing/inspection, not normal operation */
+    return load_all_discovered_modules();
+}
+
+/* =============================================================================
+ * GALILEO INFORMATION AND METADATA
+ * =============================================================================
+ */
+
+/* System information string */
+#define GALILEO_INFO_STRING \
+    "Galileo Graph-and-Logic Integrated Language Engine v" GALILEO_VERSION_STRING "\n" \
+    "Features: Dynamic Loading, Hot-Pluggable Modules, JIT Loading\n" \
+    "Architecture: Graph Neural Networks + Symbolic Reasoning\n" \
+    "Copyright: Open Source Implementation"
+
+/* Build information */
+#ifdef DEBUG
 #define GALILEO_BUILD_TYPE "Debug"
+#else
+#define GALILEO_BUILD_TYPE "Release"
 #endif
 
-#ifdef GALILEO_EXPOSE_INTERNAL_REASONING
-#define GALILEO_SYMBOLIC_INTERNALS_AVAILABLE 1
+#ifdef __DATE__
+#define GALILEO_BUILD_DATE __DATE__
 #else
-#define GALILEO_SYMBOLIC_INTERNALS_AVAILABLE 0
+#define GALILEO_BUILD_DATE "Unknown"
 #endif
 
-#ifdef GALILEO_EXPOSE_INTERNAL_MEMORY
-#define GALILEO_MEMORY_INTERNALS_AVAILABLE 1
+#ifdef __TIME__
+#define GALILEO_BUILD_TIME __TIME__
 #else
-#define GALILEO_MEMORY_INTERNALS_AVAILABLE 0
-#endif
-
-#ifdef GALILEO_EXPOSE_ADVANCED_UTILS
-#define GALILEO_ADVANCED_UTILS_AVAILABLE 1
-#else
-#define GALILEO_ADVANCED_UTILS_AVAILABLE 0
-#endif
-
-/* Compile-time feature detection */
-#if defined(__GNUC__) || defined(__clang__)
-#define GALILEO_COMPILER_SUPPORTS_BUILTIN_FUNCTIONS 1
-#else
-#define GALILEO_COMPILER_SUPPORTS_BUILTIN_FUNCTIONS 0
+#define GALILEO_BUILD_TIME "Unknown"
 #endif
 
 /* =============================================================================
- * GALILEO API INFORMATION FUNCTIONS
+ * COMPATIBILITY AND FORWARD DECLARATIONS
  * =============================================================================
  */
 
-#ifdef __cplusplus
-extern "C" {
+/* For older code that might reference the previous API */
+#ifndef GALILEO_NO_LEGACY_DEFINES
+#define GALILEO_LEGACY_VERSION_STRING GALILEO_VERSION_STRING
 #endif
 
-/* Get version information */
-static inline const char* galileo_get_version_string(void) {
-    return GALILEO_VERSION_STRING;
-}
-
-static inline int galileo_get_version_major(void) {
-    return GALILEO_VERSION_MAJOR;
-}
-
-static inline int galileo_get_version_minor(void) {
-    return GALILEO_VERSION_MINOR;
-}
-
-static inline int galileo_get_version_patch(void) {
-    return GALILEO_VERSION_PATCH;
-}
-
-/* Get build information */
-static inline const char* galileo_get_build_type(void) {
-    return GALILEO_BUILD_TYPE;
-}
-
-/* Get API capabilities */
-static inline int galileo_has_symbolic_internals(void) {
-    return GALILEO_SYMBOLIC_INTERNALS_AVAILABLE;
-}
-
-static inline int galileo_has_memory_internals(void) {
-    return GALILEO_MEMORY_INTERNALS_AVAILABLE;
-}
-
-static inline int galileo_has_advanced_utils(void) {
-    return GALILEO_ADVANCED_UTILS_AVAILABLE;
-}
-
-/* Print complete Galileo information */
-static inline void galileo_print_info(FILE* output) {
-    if (!output) output = stdout;
-    
-    fprintf(output, "Galileo Graph-and-Logic Integrated Language Engine\n");
-    fprintf(output, "Version: %s (%s build)\n", GALILEO_VERSION_STRING, GALILEO_BUILD_TYPE);
-    fprintf(output, "API Version: %s\n", GALILEO_API_VERSION);
-    fprintf(output, "\nAvailable modules:\n");
-    fprintf(output, "  Core: Always available\n");
-    fprintf(output, "  Graph: %s\n", GALILEO_HAS_GRAPH_MODULE() ? "Loaded" : "Not loaded");
-    fprintf(output, "  Symbolic: %s%s\n", 
-            GALILEO_HAS_SYMBOLIC_MODULE() ? "Loaded" : "Not loaded",
-            GALILEO_SYMBOLIC_INTERNALS_AVAILABLE ? " (with internals)" : "");
-    fprintf(output, "  Memory: %s%s\n", 
-            GALILEO_HAS_MEMORY_MODULE() ? "Loaded" : "Not loaded",
-            GALILEO_MEMORY_INTERNALS_AVAILABLE ? " (with internals)" : "");
-    fprintf(output, "  Utils: %s%s\n", 
-            GALILEO_HAS_UTILS_MODULE() ? "Loaded" : "Not loaded",
-            GALILEO_ADVANCED_UTILS_AVAILABLE ? " (with advanced features)" : "");
-    
-    fprintf(output, "\nConfiguration limits:\n");
-    fprintf(output, "  Max tokens: %d\n", MAX_TOKENS);
-    fprintf(output, "  Max edges: %d\n", MAX_EDGES);
-    fprintf(output, "  Max facts: %d\n", MAX_FACTS);
-    fprintf(output, "  Max memory slots: %d\n", MAX_MEMORY_SLOTS);
-    fprintf(output, "  Embedding dimension: %d\n", EMBEDDING_DIM);
-}
-
-#ifdef __cplusplus
-}
-#endif
-
-/* =============================================================================
- * GALILEO QUICK START EXAMPLE
- * =============================================================================
- */
-
-/*
- * Quick Start Example:
- * 
- * #include <galileo.h>
- * 
- * int main() {
- *     // Create model
- *     GalileoModel* model = GALILEO_CREATE_MODEL();
- *     if (!model) return 1;
- *     
- *     // Process some text
- *     GALILEO_PROCESS_TEXT(model, "All birds can fly. Penguins are birds.");
- *     
- *     // Add symbolic facts
- *     galileo_add_fact(model, "penguin", "cannot", "fly", 0.95f);
- *     
- *     // Run reasoning
- *     galileo_enhanced_symbolic_inference_safe(model);
- *     
- *     // Show results
- *     print_facts(model, stdout);
- *     
- *     // Cleanup
- *     GALILEO_DESTROY_MODEL(model);
- *     return 0;
- * }
- */
+/* Forward compatibility for future API changes */
+typedef void* GalileoHandle;  /* Opaque handle for future use */
 
 #endif /* GALILEO_H */
