@@ -1,0 +1,12 @@
+build/
+
+*.bak*
+*.*.md
+*:Zone.Identifier
+
+/build*
+/galileo-legacy
+/galileo
+
+!/*legacy*.md
+!/build-*.sh

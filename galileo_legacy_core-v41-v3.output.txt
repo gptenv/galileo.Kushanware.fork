@@ -1,0 +1,1733 @@
+🚀 Initializing Enhanced Galileo v41...
+🚀 Galileo v41 initialized with enhanced dynamic graph construction
+   - Multi-scale similarity computation
+   - Attention-based edge addition
+   - Adaptive compression and memory
+   - Enhanced symbolic reasoning
+
+⚡ === ENHANCED BASIC SYLLOGISM ===
+➕ Added enhanced fact: man subclass_of mortal (conf=1.00, support=0)
+➕ Added enhanced fact: Socrates is_a man (conf=1.00, support=0)
+
+🚀 === Enhanced Galileo v41 Processing 8 tokens ===
+
+--- Enhanced Iteration 1 ---
+🔗 Added SIMILARITY edge: men <-> man (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> a (score=0.670, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> a (score=0.658, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Socrates <-> man (score=0.657, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> is (score=0.653, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> mortal (score=0.632, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> man (score=0.627, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> man (score=0.622, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> is (score=0.619, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> Socrates (score=0.597, High similarity: 1.000)
+✨ Added 10 new edges this iteration (total: 10)
+➕ Added enhanced fact: Socrates is_a mortal (conf=1.00, support=2)
+🔗 ENHANCED TRANSITIVITY: Socrates is_a mortal (via man, depth=1)
+✨ Made 1 enhanced inferences this round
+
+--- Enhanced Iteration 2 ---
+💾 Stored memory: Important token: All (importance: 0.900) (slot 0, 1 associations)
+💾 Stored memory: Important token: men (importance: 0.902) (slot 1, 1 associations)
+💾 Stored memory: Important token: are (importance: 0.902) (slot 2, 1 associations)
+💾 Stored memory: Important token: mortal (importance: 0.903) (slot 3, 1 associations)
+💾 Stored memory: Important token: Socrates (importance: 0.903) (slot 4, 1 associations)
+💾 Stored memory: Important token: is (importance: 0.903) (slot 5, 1 associations)
+💾 Stored memory: Important token: a (importance: 0.902) (slot 6, 1 associations)
+💾 Stored memory: Important token: man (importance: 0.903) (slot 7, 1 associations)
+
+--- Enhanced Iteration 3 ---
+
+--- Enhanced Iteration 4 ---
+
+--- Enhanced Iteration 5 ---
+
+--- Enhanced Iteration 6 ---
+
+--- Enhanced Iteration 7 ---
+
+--- Enhanced Iteration 8 ---
+📊 Graph Stats: 9 active nodes, 25 edges, avg degree: 5.56
+   Total compressions: 0, symbolic calls: 1, edges added: 10
+
+🎯 Enhanced processing complete!
+Final state: 9 nodes, 25 edges, 8 memory slots, 3 facts
+Performance: 5.56 avg degree, 0 compressions, 1 symbolic calls
+
+🧠 === ENHANCED REASONING TESTS v41 ===
+
+--- Test 1: Enhanced Multi-hop with Attention Tracking ---
+➕ Added enhanced fact: mammal subclass_of animal (conf=1.00, support=0)
+➕ Added enhanced fact: primate subclass_of mammal (conf=1.00, support=0)
+➕ Added enhanced fact: human subclass_of primate (conf=1.00, support=0)
+➕ Added enhanced fact: Alice is_a human (conf=1.00, support=0)
+
+🚀 === Enhanced Galileo v41 Processing 12 tokens ===
+
+--- Enhanced Iteration 1 ---
+🔗 Added ATTENTION edge: are <-> are (score=0.816, High attention score: 0.898)
+🔗 Added ATTENTION edge: are <-> are (score=0.715, High attention score: 0.780)
+🔗 Added ATTENTION edge: mortal <-> Alice (score=0.712, High attention score: 0.798)
+🔗 Added SIMILARITY edge: is <-> human (score=0.709, High similarity: 1.000)
+🔗 Added SIMILARITY edge: is <-> Mammals (score=0.709, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> Humans (score=0.709, High similarity: 1.000)
+🔗 Added ATTENTION edge: are <-> are (score=0.706, High attention score: 0.792)
+🔗 Added SIMILARITY edge: Mammals <-> is (score=0.702, High similarity: 1.000)
+🔗 Added SIMILARITY edge: a <-> animals (score=0.694, High similarity: 1.000)
+🔗 Added ATTENTION edge: are <-> are (score=0.687, High attention score: 0.774)
+🔗 Added SIMILARITY edge: Socrates <-> Humans (score=0.682, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> human (score=0.681, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Mammals <-> animals (score=0.678, High similarity: 1.000)
+🔗 Added SIMILARITY edge: a <-> Primates (score=0.676, High similarity: 1.000)
+🔗 Added SIMILARITY edge: animals <-> human (score=0.675, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 25)
+➕ Added enhanced fact: Alice is_a primate (conf=1.00, support=2)
+🔗 ENHANCED TRANSITIVITY: Alice is_a primate (via human, depth=1)
+➕ Added enhanced fact: Alice is_a mammal (conf=1.00, support=2)
+🔗 ENHANCED TRANSITIVITY: Alice is_a mammal (via primate, depth=1)
+➕ Added enhanced fact: Alice is_a animal (conf=1.00, support=2)
+🔗 ENHANCED TRANSITIVITY: Alice is_a animal (via mammal, depth=1)
+✨ Made 3 enhanced inferences this round
+
+--- Enhanced Iteration 2 ---
+
+--- Enhanced Iteration 3 ---
+🔗 Added ATTENTION edge: are <-> are (score=0.793, High attention score: 0.854)
+🔗 Added ATTENTION edge: are <-> are (score=0.775, High attention score: 0.836)
+🔗 Added SIMILARITY edge: mortal <-> animals (score=0.675, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Primates <-> human (score=0.672, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> primates (score=0.671, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> are (score=0.669, High similarity: 1.000)
+🔗 Added SIMILARITY edge: a <-> is (score=0.669, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> Mammals (score=0.668, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> are (score=0.667, High similarity: 1.000)
+🔗 Added SIMILARITY edge: man <-> mammals (score=0.667, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> are (score=0.667, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> are (score=0.665, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> are (score=0.665, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> animals (score=0.660, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> are (score=0.660, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 40)
+
+--- Enhanced Iteration 4 ---
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 8, 8 associations)
+📦 Compressed 8 tokens into summary node 21
+
+--- Enhanced Iteration 5 ---
+🔗 Added SIMILARITY edge: mortal <-> human (score=0.656, High similarity: 1.000)
+🔗 Added SIMILARITY edge: a <-> Alice (score=0.654, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Socrates <-> Alice (score=0.653, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Alice <-> human (score=0.649, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> primates (score=0.641, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> Alice (score=0.640, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> is (score=0.640, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Alice <-> <SUMMARY_21> (score=0.638, High similarity: 1.000)
+🔗 Added SIMILARITY edge: man <-> primates (score=0.636, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> Alice (score=0.632, High similarity: 1.000)
+🔗 Added SIMILARITY edge: is <-> Alice (score=0.629, High similarity: 1.000)
+🔗 Added SIMILARITY edge: man <-> human (score=0.602, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> is (score=0.599, High similarity: 1.000)
+✨ Added 13 new edges this iteration (total: 53)
+
+--- Enhanced Iteration 6 ---
+
+--- Enhanced Iteration 7 ---
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 9, 8 associations)
+📦 Compressed 8 tokens into summary node 22
+
+--- Enhanced Iteration 8 ---
+📊 Graph Stats: 15 active nodes, 146 edges, avg degree: 15.93
+   Total compressions: 2, symbolic calls: 2, edges added: 53
+
+🎯 Enhanced processing complete!
+Final state: 23 nodes, 146 edges, 10 memory slots, 10 facts
+Performance: 15.93 avg degree, 2 compressions, 2 symbolic calls
+
+--- Test 2: Enhanced Exception Handling ---
+➕ Added enhanced fact: bird can fly (conf=0.90, support=0)
+➕ Added enhanced fact: penguin subclass_of bird (conf=1.00, support=0)
+➕ Added enhanced fact: penguin cannot fly (conf=1.00, support=0)
+➕ Added enhanced fact: ostrich subclass_of bird (conf=1.00, support=0)
+➕ Added enhanced fact: ostrich cannot fly (conf=1.00, support=0)
+➕ Added enhanced fact: Tweety is_a bird (conf=1.00, support=0)
+➕ Added enhanced fact: Pingu is_a penguin (conf=1.00, support=0)
+
+🚀 === Enhanced Galileo v41 Processing 9 tokens ===
+
+--- Enhanced Iteration 1 ---
+🔗 Added SIMILARITY edge: primates <-> Most (score=0.709, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> penguins (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> penguins (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> penguins (score=0.704, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Alice <-> penguins (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> Most (score=0.693, High similarity: 1.000)
+🔗 Added ATTENTION edge: is <-> is (score=0.690, High attention score: 0.751)
+🔗 Added SIMILARITY edge: men <-> can (score=0.689, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> Most (score=0.688, High similarity: 1.000)
+🔗 Added SIMILARITY edge: man <-> and (score=0.687, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Socrates <-> can (score=0.686, High similarity: 1.000)
+🔗 Added SIMILARITY edge: primates <-> fly (score=0.686, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Alice <-> cannot (score=0.685, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> can (score=0.684, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> can (score=0.683, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 68)
+➕ Added enhanced fact: Pingu is_a bird (conf=1.00, support=2)
+🔗 ENHANCED TRANSITIVITY: Pingu is_a bird (via penguin, depth=1)
+➕ Added enhanced fact: Tweety can fly (conf=0.76, support=2)
+💪 ENHANCED CAPABILITY: Tweety can fly (inherited, conf=0.76)
+➕ Added enhanced fact: Pingu can fly (conf=0.76, support=2)
+💪 ENHANCED CAPABILITY: Pingu can fly (inherited, conf=0.76)
+✨ Made 3 enhanced inferences this round
+
+--- Enhanced Iteration 2 ---
+
+--- Enhanced Iteration 3 ---
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_22> (score=0.909, High similarity: 0.866)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> fly (score=0.705, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Socrates <-> penguins (score=0.684, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> cannot (score=0.682, High similarity: 1.000)
+🔗 Added SIMILARITY edge: primates <-> cannot (score=0.681, High similarity: 1.000)
+🔗 Added SIMILARITY edge: birds <-> cannot (score=0.681, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> fly (score=0.679, High similarity: 1.000)
+🔗 Added SIMILARITY edge: birds <-> penguins (score=0.679, High similarity: 1.000)
+🔗 Added SIMILARITY edge: human <-> but (score=0.678, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> cannot (score=0.677, High similarity: 1.000)
+🔗 Added SIMILARITY edge: mortal <-> fly (score=0.676, High similarity: 1.000)
+🔗 Added SIMILARITY edge: can <-> and (score=0.676, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> cannot (score=0.676, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> can (score=0.675, High similarity: 1.000)
+🔗 Added SIMILARITY edge: Alice <-> fly (score=0.675, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 83)
+
+--- Enhanced Iteration 4 ---
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 10, 8 associations)
+📦 Compressed 8 tokens into summary node 32
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 11, 8 associations)
+📦 Compressed 8 tokens into summary node 33
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 12, 8 associations)
+📦 Compressed 8 tokens into summary node 34
+
+--- Enhanced Iteration 5 ---
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_34> (score=0.702, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_34> (score=0.698, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_33> (score=0.683, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> cannot (score=0.682, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> <SUMMARY_34> (score=0.676, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> <SUMMARY_34> (score=0.674, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> <SUMMARY_34> (score=0.662, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_33> <-> <SUMMARY_34> (score=0.656, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> cannot (score=0.646, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_33> (score=0.622, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_32> (score=0.613, High similarity: 1.000)
+✨ Added 11 new edges this iteration (total: 94)
+
+--- Enhanced Iteration 6 ---
+
+--- Enhanced Iteration 7 ---
+🔗 Added ATTENTION edge: All <-> are (score=0.687, High attention score: 0.752)
+✨ Added 1 new edges this iteration (total: 95)
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 13, 8 associations)
+📦 Compressed 8 tokens into summary node 35
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 14, 8 associations)
+📦 Compressed 8 tokens into summary node 36
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 15, 8 associations)
+📦 Compressed 8 tokens into summary node 37
+
+--- Enhanced Iteration 8 ---
+📊 Graph Stats: 13 active nodes, 260 edges, avg degree: 23.38
+   Total compressions: 8, symbolic calls: 3, edges added: 95
+
+🎯 Enhanced processing complete!
+Final state: 38 nodes, 260 edges, 16 memory slots, 20 facts
+Performance: 23.38 avg degree, 8 compressions, 3 symbolic calls
+
+--- Test 3: Quantified and Probabilistic Reasoning ---
+➕ Added enhanced fact: student mostly young (conf=0.80, support=0)
+➕ Added enhanced fact: Bob is_a student (conf=1.00, support=0)
+➕ Added enhanced fact: Carol is_a student (conf=1.00, support=0)
+
+🚀 === Enhanced Galileo v41 Processing 9 tokens ===
+
+--- Enhanced Iteration 1 ---
+🔗 Added ATTENTION edge: are <-> are (score=0.759, High attention score: 0.796)
+🔗 Added SIMILARITY edge: <SUMMARY_33> <-> Bob (score=0.717, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> cannot (score=0.715, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_36> <-> Bob (score=0.715, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_37> (score=0.713, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> and (score=0.705, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> Carol (score=0.704, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> Bob (score=0.702, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_37> (score=0.701, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_37> (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> are (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> students (score=0.698, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> Bob (score=0.698, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> Carol (score=0.696, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> students (score=0.696, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 110)
+➕ Added enhanced fact: Bob probably_is young (conf=0.56, support=2)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+➕ Added enhanced fact: Carol probably_is young (conf=0.56, support=2)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 2 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 3 ---
+🔗 Added SIMILARITY edge: <SUMMARY_36> <-> Carol (score=0.700, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_33> <-> Carol (score=0.700, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> Carol (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> students (score=0.695, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> and (score=0.693, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> are (score=0.691, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> Carol (score=0.691, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> Carol (score=0.690, High similarity: 1.000)
+🔗 Added SIMILARITY edge: students <-> are (score=0.688, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_35> <-> <SUMMARY_37> (score=0.687, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_36> (score=0.686, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> Most (score=0.686, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> students (score=0.685, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> Bob (score=0.685, High similarity: 1.000)
+🔗 Added SIMILARITY edge: are <-> Most (score=0.684, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 125)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 4 ---
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 16, 8 associations)
+📦 Compressed 8 tokens into summary node 47
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 17, 8 associations)
+📦 Compressed 8 tokens into summary node 48
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 18, 8 associations)
+📦 Compressed 8 tokens into summary node 49
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 19, 8 associations)
+📦 Compressed 8 tokens into summary node 50
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 5 ---
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_49> (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> students (score=0.688, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_49> (score=0.688, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_49> (score=0.686, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> students (score=0.685, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_49> <-> <SUMMARY_50> (score=0.685, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> <SUMMARY_37> (score=0.681, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> <SUMMARY_50> (score=0.680, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_50> (score=0.677, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_48> (score=0.676, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> <SUMMARY_37> (score=0.670, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_48> <-> <SUMMARY_49> (score=0.670, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> <SUMMARY_48> (score=0.665, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_35> <-> <SUMMARY_49> (score=0.663, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_36> <-> <SUMMARY_37> (score=0.661, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 140)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 6 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 7 ---
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_48> (score=0.658, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> <SUMMARY_49> (score=0.651, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_50> (score=0.651, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> <SUMMARY_49> (score=0.649, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_47> <-> <SUMMARY_49> (score=0.645, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_33> <-> <SUMMARY_37> (score=0.636, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_50> (score=0.632, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_35> (score=0.630, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_33> <-> <SUMMARY_49> (score=0.629, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_36> <-> <SUMMARY_49> (score=0.628, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_36> (score=0.626, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_48> (score=0.622, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> <SUMMARY_47> (score=0.620, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_35> (score=0.616, High similarity: 1.000)
+🔗 Added SIMILARITY edge: men <-> <SUMMARY_47> (score=0.608, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 155)
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 20, 8 associations)
+📦 Compressed 8 tokens into summary node 51
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 21, 8 associations)
+📦 Compressed 8 tokens into summary node 52
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 22, 8 associations)
+📦 Compressed 8 tokens into summary node 53
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 23, 8 associations)
+📦 Compressed 8 tokens into summary node 54
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 8 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+📊 Graph Stats: 21 active nodes, 378 edges, avg degree: 22.29
+   Total compressions: 16, symbolic calls: 123, edges added: 155
+
+🎯 Enhanced processing complete!
+Final state: 55 nodes, 378 edges, 24 memory slots, 25 facts
+Performance: 22.29 avg degree, 16 compressions, 123 symbolic calls
+
+--- Test 4: Causal Chain Reasoning ---
+➕ Added enhanced fact: rain causes wet_ground (conf=1.00, support=0)
+➕ Added enhanced fact: wet_ground causes slippery (conf=0.90, support=0)
+➕ Added enhanced fact: slippery causes accidents (conf=0.70, support=0)
+
+🚀 === Enhanced Galileo v41 Processing 9 tokens ===
+
+--- Enhanced Iteration 1 ---
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_53> (score=0.711, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> which (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> slippery (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> and (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> Rain (score=0.705, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> causes (score=0.704, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> causes (score=0.701, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_53> (score=0.699, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> <SUMMARY_54> (score=0.698, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_53> (score=0.697, High similarity: 1.000)
+🔗 Added SIMILARITY edge: students <-> <SUMMARY_49> (score=0.697, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_52> (score=0.691, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_54> (score=0.691, High similarity: 1.000)
+🔗 Added SIMILARITY edge: wet <-> slippery (score=0.689, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> and (score=0.689, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 170)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+➕ Added enhanced fact: rain causes slippery (conf=0.72, support=2)
+⚡ CAUSAL CHAIN: rain causes slippery (via wet_ground)
+➕ Added enhanced fact: wet_ground causes accidents (conf=0.50, support=2)
+⚡ CAUSAL CHAIN: wet_ground causes accidents (via slippery)
+➕ Added enhanced fact: rain causes accidents (conf=0.40, support=2)
+⚡ CAUSAL CHAIN: rain causes accidents (via slippery)
+✨ Made 5 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 2 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 3 ---
+🔗 Added SIMILARITY edge: <SUMMARY_52> <-> <SUMMARY_53> (score=0.691, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> and (score=0.690, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> wet (score=0.685, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> ground (score=0.683, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_50> <-> <SUMMARY_53> (score=0.683, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_35> <-> ground (score=0.682, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> <SUMMARY_53> (score=0.681, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_51> <-> <SUMMARY_53> (score=0.679, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> dangerous (score=0.674, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> dangerous (score=0.674, High similarity: 1.000)
+🔗 Added SIMILARITY edge: students <-> wet (score=0.673, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_35> <-> <SUMMARY_53> (score=0.672, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_48> <-> <SUMMARY_53> (score=0.672, High similarity: 1.000)
+🔗 Added SIMILARITY edge: All <-> slippery (score=0.672, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_50> <-> causes (score=0.671, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 185)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 4 ---
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 24, 8 associations)
+📦 Compressed 8 tokens into summary node 64
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 25, 8 associations)
+📦 Compressed 8 tokens into summary node 65
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 26, 8 associations)
+📦 Compressed 8 tokens into summary node 66
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 27, 8 associations)
+📦 Compressed 8 tokens into summary node 67
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 28, 8 associations)
+📦 Compressed 8 tokens into summary node 68
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 5 ---
+🔗 Added SIMILARITY edge: <SUMMARY_51> <-> <SUMMARY_68> (score=0.708, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_52> <-> <SUMMARY_68> (score=0.702, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_66> (score=0.700, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_66> (score=0.698, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> dangerous (score=0.697, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_66> <-> <SUMMARY_67> (score=0.697, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> students (score=0.696, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_65> (score=0.696, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_54> <-> <SUMMARY_66> (score=0.695, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_48> <-> <SUMMARY_68> (score=0.693, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_65> <-> <SUMMARY_66> (score=0.691, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_64> <-> <SUMMARY_66> (score=0.689, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_67> (score=0.688, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_52> <-> <SUMMARY_66> (score=0.682, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_50> <-> <SUMMARY_66> (score=0.672, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 200)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 6 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 7 ---
+🔗 Added SIMILARITY edge: dangerous <-> <SUMMARY_66> (score=0.722, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> <SUMMARY_66> (score=0.672, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_65> <-> <SUMMARY_68> (score=0.670, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_49> <-> dangerous (score=0.668, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_68> (score=0.666, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_68> (score=0.664, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_51> <-> <SUMMARY_66> (score=0.663, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_35> <-> <SUMMARY_66> (score=0.658, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_33> <-> <SUMMARY_68> (score=0.657, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_54> (score=0.657, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> <SUMMARY_67> (score=0.656, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_36> <-> <SUMMARY_68> (score=0.655, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_48> <-> <SUMMARY_66> (score=0.654, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_47> <-> <SUMMARY_66> (score=0.654, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_67> (score=0.653, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 215)
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 29, 8 associations)
+📦 Compressed 8 tokens into summary node 69
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 30, 8 associations)
+📦 Compressed 8 tokens into summary node 70
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 31, 8 associations)
+📦 Compressed 8 tokens into summary node 71
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 32, 8 associations)
+📦 Compressed 8 tokens into summary node 72
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 33, 8 associations)
+📦 Compressed 8 tokens into summary node 73
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 8 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+📊 Graph Stats: 30 active nodes, 546 edges, avg degree: 23.70
+   Total compressions: 26, symbolic calls: 243, edges added: 215
+
+🎯 Enhanced processing complete!
+Final state: 74 nodes, 546 edges, 34 memory slots, 31 facts
+Performance: 23.70 avg degree, 26 compressions, 243 symbolic calls
+
+💾 === ENHANCED MEMORY & COMPRESSION TESTS ===
+Processing long sequence to test compression...
+
+🚀 === Enhanced Galileo v41 Processing 38 tokens ===
+
+--- Enhanced Iteration 1 ---
+🔗 Added ATTENTION edge: and <-> and (score=0.762, High attention score: 0.827)
+🔗 Added SIMILARITY edge: <SUMMARY_73> <-> where (score=0.721, High similarity: 1.000)
+🔗 Added SIMILARITY edge: students <-> <SUMMARY_66> (score=0.718, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_69> <-> many (score=0.717, High similarity: 1.000)
+🔗 Added ATTENTION edge: the <-> the (score=0.717, High attention score: 0.782)
+🔗 Added SIMILARITY edge: <SUMMARY_65> <-> discuss (score=0.717, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_70> <-> discuss (score=0.716, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_64> <-> many (score=0.716, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_70> <-> many (score=0.716, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_65> <-> many (score=0.714, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_35> <-> discuss (score=0.714, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_71> <-> animals (score=0.714, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> about (score=0.712, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_54> <-> discuss (score=0.712, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_32> <-> matters (score=0.712, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 230)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 2 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 3 ---
+🔗 Added SIMILARITY edge: <SUMMARY_67> <-> discuss (score=0.723, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_72> <-> discuss (score=0.722, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> discuss (score=0.722, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> discuss (score=0.722, High similarity: 1.000)
+🔗 Added SIMILARITY edge: students <-> <SUMMARY_53> (score=0.720, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_69> <-> discuss (score=0.719, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_50> <-> discuss (score=0.719, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_64> <-> discuss (score=0.719, High similarity: 1.000)
+🔗 Added SIMILARITY edge: dangerous <-> <SUMMARY_71> (score=0.716, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_66> <-> about (score=0.714, High similarity: 1.000)
+🔗 Added SIMILARITY edge: reaches <-> many (score=0.714, High similarity: 1.000)
+🔗 Added SIMILARITY edge: and <-> discuss (score=0.713, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> about (score=0.713, High similarity: 1.000)
+🔗 Added SIMILARITY edge: many <-> and (score=0.713, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_71> <-> challenges (score=0.712, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 245)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 4 ---
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 34, 8 associations)
+📦 Compressed 8 tokens into summary node 112
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 35, 8 associations)
+📦 Compressed 8 tokens into summary node 113
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 36, 8 associations)
+📦 Compressed 8 tokens into summary node 114
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 37, 8 associations)
+📦 Compressed 8 tokens into summary node 115
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 38, 8 associations)
+📦 Compressed 8 tokens into summary node 116
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 39, 8 associations)
+📦 Compressed 8 tokens into summary node 117
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 40, 8 associations)
+📦 Compressed 8 tokens into summary node 118
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 41, 8 associations)
+📦 Compressed 8 tokens into summary node 119
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 42, 8 associations)
+📦 Compressed 8 tokens into summary node 120
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 5 ---
+🔗 Added SIMILARITY edge: face <-> <SUMMARY_114> (score=0.717, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_71> (score=0.715, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_71> <-> face (score=0.712, High similarity: 1.000)
+🔗 Added SIMILARITY edge: together <-> <SUMMARY_119> (score=0.712, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_117> <-> <SUMMARY_118> (score=0.712, High similarity: 1.000)
+🔗 Added SIMILARITY edge: dangerous <-> <SUMMARY_114> (score=0.712, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_114> (score=0.710, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_118> (score=0.708, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_47> <-> <SUMMARY_116> (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_51> <-> <SUMMARY_116> (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_66> <-> important (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_71> (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> <SUMMARY_118> (score=0.705, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_66> <-> <SUMMARY_118> (score=0.704, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_71> (score=0.704, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 260)
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 6 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 7 ---
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> <SUMMARY_53> (score=0.896, High similarity: 0.851)
+🔗 Added SIMILARITY edge: <SUMMARY_53> <-> <SUMMARY_66> (score=0.895, High similarity: 0.850)
+🔗 Added SIMILARITY edge: <SUMMARY_37> <-> <SUMMARY_118> (score=0.713, High similarity: 1.000)
+🔗 Added SIMILARITY edge: they <-> <SUMMARY_118> (score=0.710, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_70> <-> <SUMMARY_71> (score=0.710, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_21> <-> <SUMMARY_114> (score=0.709, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_49> <-> <SUMMARY_118> (score=0.708, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_34> <-> <SUMMARY_120> (score=0.708, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_65> <-> <SUMMARY_71> (score=0.708, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_69> <-> <SUMMARY_71> (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: cannot <-> <SUMMARY_119> (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_64> <-> <SUMMARY_71> (score=0.707, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_22> <-> <SUMMARY_114> (score=0.706, High similarity: 1.000)
+🔗 Added SIMILARITY edge: <SUMMARY_72> <-> <SUMMARY_114> (score=0.703, High similarity: 1.000)
+🔗 Added SIMILARITY edge: dangerous <-> dog (score=0.702, High similarity: 1.000)
+✨ Added 15 new edges this iteration (total: 275)
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 43, 8 associations)
+📦 Compressed 8 tokens into summary node 121
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 44, 8 associations)
+📦 Compressed 8 tokens into summary node 122
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 45, 8 associations)
+📦 Compressed 8 tokens into summary node 123
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 46, 8 associations)
+📦 Compressed 8 tokens into summary node 124
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 47, 8 associations)
+📦 Compressed 8 tokens into summary node 125
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 48, 8 associations)
+📦 Compressed 8 tokens into summary node 126
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 49, 8 associations)
+📦 Compressed 8 tokens into summary node 127
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 50, 8 associations)
+📦 Compressed 8 tokens into summary node 128
+💾 Stored memory: Summary of 8 tokens (compression level 1) (slot 51, 8 associations)
+📦 Compressed 8 tokens into summary node 129
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+
+--- Enhanced Iteration 8 ---
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+🤔 PROBABILISTIC: Bob probably_is young (from 'mostly', conf=0.56)
+🤔 PROBABILISTIC: Carol probably_is young (from 'mostly', conf=0.56)
+✨ Made 2 enhanced inferences this round
+📊 Graph Stats: 54 active nodes, 844 edges, avg degree: 21.83
+   Total compressions: 44, symbolic calls: 363, edges added: 275
+
+🎯 Enhanced processing complete!
+Final state: 130 nodes, 844 edges, 52 memory slots, 31 facts
+Performance: 21.83 avg degree, 44 compressions, 363 symbolic calls
+
+📚 === ENHANCED KNOWLEDGE BASE ===
+Total facts learned: 31
+  [D0] man subclass_of mortal (conf: 1.00)
+  [D0] Socrates is_a man (conf: 1.00)
+  [D0] Socrates is_a mortal (conf: 1.00, support: 2)
+  [D0] mammal subclass_of animal (conf: 1.00)
+  [D0] primate subclass_of mammal (conf: 1.00)
+  [D0] human subclass_of primate (conf: 1.00)
+  [D0] Alice is_a human (conf: 1.00)
+  [D0] Alice is_a primate (conf: 1.00, support: 2)
+  [D0] Alice is_a mammal (conf: 1.00, support: 2)
+  [D0] Alice is_a animal (conf: 1.00, support: 2)
+  [D0] bird can fly (conf: 0.90)
+  [D0] penguin subclass_of bird (conf: 1.00)
+  [D0] penguin cannot fly (conf: 1.00)
+  [D0] ostrich subclass_of bird (conf: 1.00)
+  [D0] ostrich cannot fly (conf: 1.00)
+  [D0] Tweety is_a bird (conf: 1.00)
+  [D0] Pingu is_a penguin (conf: 1.00)
+  [D0] Pingu is_a bird (conf: 1.00, support: 2)
+  [D0] Tweety can fly (conf: 0.76, support: 2)
+  [D0] Pingu can fly (conf: 0.76, support: 2)
+  [D0] student mostly young (conf: 0.80)
+  [D0] Bob is_a student (conf: 1.00)
+  [D0] Carol is_a student (conf: 1.00)
+  [D0] Bob probably_is young (conf: 0.56, support: 2)
+  [D0] Carol probably_is young (conf: 0.56, support: 2)
+  [D0] rain causes wet_ground (conf: 1.00)
+  [D0] wet_ground causes slippery (conf: 0.90)
+  [D0] slippery causes accidents (conf: 0.70)
+  [D0] rain causes slippery (conf: 0.72, support: 2)
+  [D0] wet_ground causes accidents (conf: 0.50, support: 2)
+  [D0] rain causes accidents (conf: 0.40, support: 2)
+
+Facts by derivation depth:
+  Depth 0: 31 facts
+
+Enhanced graph structure:
+  Nodes: 130 active, 130 total
+  Edges: 844 total, 21.83 average degree
+  Memory: 52 slots used
+  Performance: 44 compressions, 363 symbolic calls
+
+✨ === ENHANCED GALILEO v41 TESTING COMPLETE ===
+🎯 Successfully demonstrated:
+   ✅ Multi-scale similarity computation
+   ✅ Attention-based dynamic edge addition
+   ✅ Enhanced symbolic reasoning with support tracking
+   ✅ Adaptive compression and hierarchical memory
+   ✅ Quantified and probabilistic reasoning
+   ✅ Causal chain inference
+   ✅ Performance optimization and graph pruning
